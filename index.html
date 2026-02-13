@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied AI Systems | High-Precision Logic & Workflows</title>
+    <meta name="description"
+        content="I design applied AI systems that translate intent into reliable execution—focusing on clarity, constraints, and outcomes.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Applied AI Systems | High-Precision Logic & Workflows">
+    <meta property="og:description"
+        content="Translating human intent into machine-executable AI system specifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://applied-ai-portfolio.netlify.app">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fcfcfc;
+            --text: #1a1a1a;
+            --text-secondary: #555555;
+            --accent: #111111;
+            --border: #e8e8e8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: clamp(3rem, 10vw, 8rem) 1.5rem;
+        }
+
+        .prose-max {
+            max-width: 65ch;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.15 !important;
+        }
+
+        .case-card {
+            border-left: 1px solid var(--border);
+            padding-left: 1.5rem;
+            margin: 4rem 0;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .case-card:hover {
+            border-color: var(--text);
+            transform: translateX(4px);
+        }
+
+        input,
+        textarea {
+            background-color: #f9f9f9 !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: #ffffff !important;
+            border-color: var(--text);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        ::selection {
+            background: #ededed;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .case-card {
+                transition: none;
+                transform: none;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d0d0d;
+                --text: #ffffff;
+                --text-secondary: #999999;
+                --border: #222222;
+            }
+
+            body {
+                background-color: var(--bg);
+                color: var(--text);
+            }
+
+            input,
+            textarea {
+                background-color: #151515 !important;
+                border-color: var(--border) !important;
+                color: #ffffff;
+            }
+
+            .bg-gray-50 {
+                background-color: #1a1a1a !important;
+                border-color: #2a2a2a !important;
+            }
+
+            .text-gray-900 {
+                color: #ffffff !important;
+            }
+
+            .text-gray-700,
+            .text-gray-600,
+            .text-gray-500 {
+                color: var(--text-secondary) !important;
+            }
+
+            .border-gray-100,
+            .border-gray-200 {
+                border-color: var(--border) !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <div class="container">
+        <!-- Header -->
+        <header class="mb-24">
+            <h1 class="text-3xl font-semibold tracking-tight mb-4">Applied AI Systems</h1>
+            <p class="text-gray-500 text-xl leading-snug prose-max">
+                I design applied AI systems that translate intent into reliable execution—focusing on clarity,
+                constraints, and outcomes rather than experimentation.
+            </p>
+        </header>
+
+        <!-- What I Do -->
+        <section class="mb-24">
+            <h2
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-8 underline decoration-gray-200 underline-offset-8">
+                Execution</h2>
+            <div class="space-y-6 text-gray-700 leading-relaxed text-lg prose-max">
+                <p>
+                    I work at the intersection of strategy, execution, and automation. My role is to translate human
+                    intent into AI-operational structures that machines can execute reliably and teams can reason about
+                    confidently.
+                </p>
+                <p class="text-sm text-gray-400 italic">
+                    Engagements are scoped around systems, not tools. Typical deliverables include specifications,
+                    workflows, and governance artifacts.
+                </p>
+            </div>
+        </section>
+
+        <!-- Selected Work -->
+        <section class="mb-24">
+            <h2
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-8 underline decoration-gray-200 underline-offset-8">
+                Selected Work</h2>
+            <p class="text-sm text-gray-400 mb-12">Representative examples of system design and constraint mapping.</p>
+
+            <!-- Case Study: Logic Specification -->
+            <div class="case-card">
+                <h3 class="text-xl font-semibold mb-4 text-gray-900">Case Snapshot — Product Fidelity Recovery</h3>
+                <div class="space-y-5 text-gray-600 leading-relaxed prose-max">
+                    <p><strong class="font-medium text-gray-900">Context:</strong> A solo founder was spending 40+ hours
+                        a week "policing" an AI content agent that kept hallucinating data and ignoring brand voice,
+                        despite complex prompts.</p>
+                    <p><strong class="font-medium text-gray-900">Work:</strong> I decoupled the founder's intent from
+                        the execution layer by designing a Deterministic Logic Specification. Instead of "better
+                        prompts," I implemented a source-locking mechanism and a failure-handling protocol.</p>
+
+                    <!-- Logic Table Snippet -->
+                    <div
+                        class="bg-gray-50 border border-gray-100 rounded-lg p-6 my-8 font-mono text-[13px] leading-relaxed overflow-x-auto shadow-sm">
+                        <div class="mb-4 text-gray-400 opacity-60">// Logic Transformation Snippet</div>
+                        <div class="grid grid-cols-[100px_1fr] gap-x-8 gap-y-3">
+                            <span class="text-gray-400">Intent:</span>
+                            <span class="italic text-gray-500">"Summarize accurately"</span>
+                            <span class="text-gray-400">Constraint:</span>
+                            <span class="font-medium text-gray-900">Source Lock: JSON object only. If fact lacks
+                                `source_url`, OMIT.</span>
+
+                            <div class="col-span-2 border-t border-gray-200 my-2 opacity-10"></div>
+
+                            <span class="text-gray-400">Intent:</span>
+                            <span class="italic text-gray-500">"Helpful tone"</span>
+                            <span class="text-gray-400">Constraint:</span>
+                            <span class="font-medium text-gray-900">Weights: Expert(0.8), Guide(0.2). FORBID
+                                slang/imperatives.</span>
+                        </div>
+                    </div>
+
+                    <p><strong class="font-medium text-gray-900">Outcome:</strong> 100% elimination of hallucinated
+                        facts and a 4x reduction in manual review time. The system now "fails safely" by requesting
+                        clarification instead of guessing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagement / Intake -->
+        <section class="mb-24">
+            <h2
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-10 underline decoration-gray-200 underline-offset-8">
+                Inquiry</h2>
+            <p class="text-gray-600 mb-12 leading-relaxed prose-max">
+                Briefly describe your context and what you are trying to achieve. I review submissions personally and
+                respond where there is a clear fit for a systems-based approach.
+            </p>
+
+            <form action="#" method="POST" class="space-y-10 prose-max">
+                <div>
+                    <label for="context"
+                        class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-4">Project
+                        Context</label>
+                    <textarea id="context" name="context" rows="4"
+                        class="w-full border border-gray-200 rounded-lg p-5 text-sm focus:outline-none"
+                        placeholder="Where is the system complexity or ambiguity?"></textarea>
+                </div>
+                <div>
+                    <label for="intent"
+                        class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-4">Primary
+                        Objective</label>
+                    <input type="text" id="intent" name="intent"
+                        class="w-full border border-gray-200 rounded-lg p-5 text-sm focus:outline-none"
+                        placeholder="What is the non-negotiable outcome?">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <label for="name"
+                            class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-4">Full
+                            Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full border border-gray-200 rounded-lg p-5 text-sm focus:outline-none"
+                            placeholder="Identity">
+                    </div>
+                    <div>
+                        <label for="email"
+                            class="block text-xs font-semibold uppercase tracking-wider text-gray-500 mb-4">Email
+                            Address</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full border border-gray-200 rounded-lg p-5 text-sm focus:outline-none"
+                            placeholder="Professional Email">
+                    </div>
+                </div>
+                <button type="submit"
+                    class="bg-gray-900 text-white px-10 py-4 rounded-lg text-sm font-semibold hover:bg-black transition-all shadow-sm active:scale-[0.98]">
+                    Submit for Review
+                </button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="border-t border-gray-100 pt-12 text-xs text-gray-400 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <p>© 2025 Applied AI Systems. Intent → Logic → Execution.</p>
+            <div class="flex gap-6">
+                <span class="opacity-50 hover:opacity-100 cursor-default transition-opacity">Built for Clarity</span>
+                <span class="opacity-50 hover:opacity-100 cursor-default transition-opacity">Deterministic Flow</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
